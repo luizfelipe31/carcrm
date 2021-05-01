@@ -38,7 +38,7 @@ class VehiclesController extends Controller
           'gearbox' => Vehicle_gearbox::all(),
           'fuel' => Vehicle_fuel::all(),
           'car_steering' => Vehicle_car_steering::all(),
-          'motopower' => Vehicle_motorpower::all(),
+          'motorpower' => Vehicle_motorpower::all(),
           'doors' => Vehicle_doors::all(),
           'features' => Vehicle_features::all(),
           'carcolor' => Vehicle_carcolor::all(),
