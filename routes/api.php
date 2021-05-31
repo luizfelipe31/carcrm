@@ -1,12 +1,16 @@
 <?php
 
+use App\Http\Controllers\api\NotesController;
+use App\Http\Controllers\api\OwnersController;
 use App\Http\Controllers\api\uploads\VehicleUploadController;
 use App\Http\Controllers\api\VehiclesController;
 use App\Http\Controllers\webservice\WebserviceController;
 use Illuminate\Support\Facades\Route;
 
 Route::apiResources([
-    'vehicles' => VehiclesController::class
+    'vehicles' => VehiclesController::class,
+    'notes' => NotesController::class,
+    'owners' => OwnersController::class
 ]);
 
 Route::group(['prefix' => 'upload'], function () {
